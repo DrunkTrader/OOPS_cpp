@@ -8,12 +8,14 @@ class student {
 
 public :
 //member function to safily modify private data
-    void setData(int roll_number, float marks_of_student){  
+    void setData(int roll_number, float marks_of_student)
+    {  
         roll = roll_number;
         marks = marks_of_student;
     }
 
-    void display() {
+    void display()
+    {
         cout << "Roll : " << roll << '\n';
         cout << "Marks : " << marks << '\n';
     }

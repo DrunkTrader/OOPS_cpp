@@ -52,4 +52,6 @@ int main(){
     // users_binary.check_binary();             //works the same if we remove the check_binary in the compliment_binary
     users_binary.compliment_binary();
     users_binary.display_values();
+
+    return 0;1
 }

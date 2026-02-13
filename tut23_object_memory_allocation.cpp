@@ -4,6 +4,11 @@
 #include <format>
 using namespace std;
 
+/*
+@brief : 
+In this tutorial, we will learn about how memory is allocated for objects and how to use arrays in classes. We will create a class called Shop that will have two arrays: one for item IDs and another for item prices. We will also have a counter to keep track of the number of items in the shop. The class will have member functions to set the price of items and display the prices of all items in the shop.
+*/
+
 class Shop{
     private:
         int item_id[100];

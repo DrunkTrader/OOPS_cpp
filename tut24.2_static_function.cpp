@@ -55,4 +55,34 @@ This program demonstrates the use of static member in a class.
 In this program, we have a class called Employee that has a private member variable id and a static member variable count. 
 The setData() function is used to set the id of the employee and increment the count of employees.
 The getData() function is used to display the id of the employee and the count of employees.
-*/
+
+
+Static Data Member (class variable)
+    visibility : private, public, protected
+    scope : class scope
+    lifetime : entire program execution
+    default value : 0
+    storage : static storage (means that it is allocated only once and shared by all objects of the class)
+
+Local Variable (function variable)
+    visibility : local to the function/ Block
+    scope : function/ Block scope
+    lifetime : until the function/ Block is executed
+    default value : garbage value (uninitialized)
+    storage : stack
+
+Static Local Variable (function variable)
+    visibility : local to the function/ Block
+    scope : function/ Block scope
+    lifetime : entire program execution
+    default value : 0
+    storage : static storage (means that it is allocated only once and retains its value between function calls)
+
+Global Variable (program variable)
+    visibility : global to the entire program
+    scope : global scope
+    lifetime : entire program execution
+    default value : 0
+    storage : static storage (means that it is allocated only once and shared by all functions of the program)
+
+    */

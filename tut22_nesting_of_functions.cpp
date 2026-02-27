@@ -53,5 +53,5 @@ int main(){
     users_binary.compliment_binary();
     users_binary.display_values();
 
-    return 0;1
+    return 0;
 }

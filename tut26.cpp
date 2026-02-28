@@ -1,16 +1,29 @@
 // tut26 - friend functions in C++
 // A friend function is a function that is not a member of a class but has access to the private and protected members of the class.
 
+/*
+Properties of Friend Function
+1. Not in the scope of class.
+2. Since it is not in the scope of the class ,it cannot be called from the object of that class.
+    c1.sumComplex() // wrong
+3. Can be invoked without the help of any object.
+    sumComplex(c1, c2) // correct
+4. Usually contains objects as arguments.
+5. Can be declared inside public or private section of the class, it doesn't matter.
+6. It cannot access the members directly by their names and need object_name.member_name to access any member.
+   
+*/
 #include <iostream>
 using namespace std;
 
 class Complex {
     int a, b;
-    friend Complex sumComplex(Complex o1, Complex o2); // friend function declaration
-
-public:
-    void setData(int x, int y);
-    void printNumber();
+    
+    public:
+        friend Complex sumComplex(Complex o1, Complex o2); // friend function declaration
+        
+        void setData(int x, int y);
+        void printNumber();
 
 };
 
@@ -48,3 +61,5 @@ int main(){
 
     return 0;
 }
+
+
